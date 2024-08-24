@@ -82,17 +82,17 @@ export const gradients = {
   8: "bg-gradient-to-b from-sky-400 via-cielo-medio to-niebla",
   9: "bg-gradient-to-b from-sky-400 via-cielo-medio to-niebla",
   10: "bg-gradient-to-b from-sky-400 via-cielo-medio to-niebla",
-  11: "bg-gradient-to-b from-sky-400 via-cielo-medio to-niebla",
+  11: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-niebla",
 
-  12: "bg-gradient-to-b from-sky-400 via-cielo-medio to-cielo-claro",
-  13: "bg-gradient-to-b from-sky-400 via-cielo-medio to-cielo-claro",
-  14: "bg-gradient-to-b from-sky-400 via-cielo-medio to-cielo-claro",
-  15: "bg-gradient-to-b from-sky-400 via-cielo-medio to-cielo-claro",
+  12: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-claro",
+  13: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-despejado",
+  14: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-claro",
+  15: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-claro",
   16: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-claro",
   17: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-claro",
+  
   18: "bg-gradient-to-b from-cielo-claro via-atardecer-suave to-atardecer",
   19: "bg-gradient-to-b from-cielo-claro via-atardecer-suave to-atardecer",
-
   20: "bg-gradient-to-b from-cielo-claro via-atardecer-suave to-atardecer",
   21: "bg-gradient-to-b from-cielo-claro via-atardecer-suave to-atardecer",
   22: "bg-gradient-to-b from-cielo-claro via-nubes-claras to-niebla",

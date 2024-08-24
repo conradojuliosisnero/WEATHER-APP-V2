@@ -3,7 +3,7 @@ import { Sun } from "lucide-react";
 
 export default function WeeklyForecast() {
   return (
-    <section className="bg-white text-lluvia-ligera rounded-lg p-6">
+    <section className="bg-white text-white bg-opacity-20 backdrop-blur-md rounded-lg p-6">
       <h2 className="text-xl font-semibold mb-4">Pronóstico Semanal</h2>
       <div className="space-y-4">
         {["Hoy", "Mañana", "Miércoles", "Jueves", "Viernes"].map((day) => (

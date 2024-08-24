@@ -17,9 +17,9 @@ module.exports = {
         "sol-brillante": "#FFD700",
         "tormenta-fuerte": "#4F4F4F",
         "lluvia-intensa": "#1F3A93",
-        nieve: "#FFFFFF",
-        atardecer: "#FF6347",
-        niebla: "#B0C4DE",
+        "nieve": "#FFFFFF",
+        "atardecer": "#FF6347",
+        "niebla": "#B0C4DE",
       },
       fontSize: {
         titulo: "2.25rem", // 36px
