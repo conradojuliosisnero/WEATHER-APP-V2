@@ -59,7 +59,7 @@ export default function WeatherDashboard() {
       <Sidebar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <main className="p-4 space-y-6">
         <Flash />
-          {/* <Clouds /> */}
+        <Clouds />
         <SearchSection />
         {/* <div className="w-full bg-white bg-opacity-10 backdrop-blur h-[300px] rounded-redondeado-grande overflow-hidden ">
           nubes en caso de averlas

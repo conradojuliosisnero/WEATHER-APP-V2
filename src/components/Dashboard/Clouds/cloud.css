@@ -29,7 +29,9 @@
 }
 
 #cloud-mid {
-  top: calc(var(--clouds-position) - 10px); /* Ajusta la posición en relación con la variable */
+  top: calc(
+    var(--clouds-position) - 10px
+  ); /* Ajusta la posición en relación con la variable */
   width: 580px;
   height: 35px;
   filter: url(#filter-mid);
@@ -38,7 +40,9 @@
 }
 
 #cloud-front {
-  top: calc(var(--clouds-position) - 20px); /* Ajusta la posición en relación con la variable */
+  top: calc(
+    var(--clouds-position) - 20px
+  ); /* Ajusta la posición en relación con la variable */
   width: 450px;
   height: 40px;
   left: -20px;
@@ -52,6 +56,8 @@
     transform: translateX(100vw); /* Empieza fuera del viewport a la derecha */
   }
   100% {
-    transform: translateX(-100%); /* Termina fuera del viewport a la izquierda */
+    transform: translateX(
+      -100%
+    ); /* Termina fuera del viewport a la izquierda */
   }
 }
