@@ -7,8 +7,8 @@ import { DESCRIPTION } from "@/data/data";
 
 const inter = Nunito_Sans({
   subsets: ["latin"],
+  style: ["normal", "italic"],
   weight: ["400", "500", "600", "700"],
-  display: "swap",
 });
 
 export const metadata = {

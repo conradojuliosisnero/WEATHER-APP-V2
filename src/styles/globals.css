@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,12 +24,20 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    width: 100vw;
-    height: 100vh;
-}
+  width: 100vw;
+  height: 100vh;
+} */
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+body{
+  background-color: #333333;
+}
+
+.btn-uno {
+  @apply bg-slate-100 text-slate-500 rounded-full px-4 py-2 hover:bg-slate-600 hover:text-slate-100 transition-colors duration-300;
 }

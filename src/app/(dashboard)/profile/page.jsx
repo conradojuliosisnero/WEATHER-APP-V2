@@ -1,8 +1,6 @@
 
 export default function page() {
   return (
-    <div>
-        search
-    </div>
+    <div>profile</div>
   )
 }

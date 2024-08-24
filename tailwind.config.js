@@ -11,18 +11,19 @@ module.exports = {
     extend: {
       colors: {
         "cielo-claro": "#87CEEB",
+        "cielo-despejado": "#38BDF8",
         "nubes-grises": "#A0A4A8",
         "lluvia-ligera": "#6E7F80",
         "sol-brillante": "#FFD700",
         "tormenta-fuerte": "#4F4F4F",
         "lluvia-intensa": "#1F3A93",
-        "nieve": "#FFFFFF",
-        "atardecer": "#FF6347",
-        "niebla": "#B0C4DE",
+        nieve: "#FFFFFF",
+        atardecer: "#FF6347",
+        niebla: "#B0C4DE",
       },
       fontSize: {
-        "titulo": "2.25rem", // 36px
-        "subtitulo": "1.5rem", // 24px
+        titulo: "2.25rem", // 36px
+        subtitulo: "1.5rem", // 24px
         "texto-normal": "1rem", // 16px
         "texto-pequeno": "0.875rem", // 14px
         "texto-mini": "0.75rem", // 12px
@@ -54,6 +55,12 @@ module.exports = {
         "sombra-moderada": "0 4px 6px rgba(0, 0, 0, 0.1)", // Sombra moderada
         "sombra-fuerte": "0 10px 15px rgba(0, 0, 0, 0.2)", // Sombra fuerte
       },
+    },
+  },
+  purge: {
+    content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+    options: {
+      safelist: ["bg-gradient-to-r", "from-blue-500","via-green-500","to-green-500"], 
     },
   },
   darkMode: "class",
