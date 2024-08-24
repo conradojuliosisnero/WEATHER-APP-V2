@@ -21,8 +21,8 @@ module.exports = {
         "niebla": "#B0C4DE",
       },
       fontSize: {
-        titulo: "2.25rem", // 36px
-        subtitulo: "1.5rem", // 24px
+        "titulo": "2.25rem", // 36px
+        "subtitulo": "1.5rem", // 24px
         "texto-normal": "1rem", // 16px
         "texto-pequeno": "0.875rem", // 14px
         "texto-mini": "0.75rem", // 12px

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useSubmint } from "@/hooks/useSubmint";
+import Link from "next/link";
 
 export default function Login() {
   const [isLogin, setIsLogin] = useState(true);
@@ -90,6 +91,10 @@ export default function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
+          <div className="flex items-center justify-start text-texto-normal text-nubes-grises hover:text-atardecer">
+            <Link href="/forgot-password">Olvidaste tu contraseña?</Link>
+          </div>
+
           {/* Submit button */}
           <div>
             <button
