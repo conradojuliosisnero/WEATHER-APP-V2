@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 
 const Flash = () => {
   return (
-    <div style={{ position: "relative" }}>
+    <div className="sun-container">
       <div class="sun"></div>
       <div class="ray"></div>
     </div>

@@ -14,7 +14,7 @@ export default function Sidebar({ isMenuOpen, setIsMenuOpen }) {
           <X className="w-6 h-6 absolute top-4 right-4" />
         </button>
       </div>
-      <nav className="h-full flex flex-col justify-center items-center text-2xl space-y-8">
+      <nav className=" flex flex-col justify-center items-center text-2xl space-y-8">
         <Link
           href="/home"
           className="hover:text-blue-300 transition-colors duration-200 flex items-center"
