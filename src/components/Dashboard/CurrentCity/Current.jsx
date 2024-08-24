@@ -10,7 +10,7 @@ import {
 
 export default function CurrentCity() {
   return (
-    <section className="backdrop-blur-md rounded-lg p-6">
+    <section className="rounded-lg p-6">
       <h2 className="text-xl font-semibold mb-4 flex items-center">
         <MapPin className="mr-2 h-5 w-5" /> Cartagena de Indias
       </h2>
