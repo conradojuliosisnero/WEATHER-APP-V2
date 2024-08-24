@@ -1,3 +1,10 @@
-export default function DashboardLayout({ children }) {
-  return <>{children}</>;
+import { ParticlesComponent } from "@/components/ui/Particles/Particles";
+
+export default function layout({ children }) {
+  return (
+    <>
+      <ParticlesComponent />
+      {children}
+    </>
+  );
 }
