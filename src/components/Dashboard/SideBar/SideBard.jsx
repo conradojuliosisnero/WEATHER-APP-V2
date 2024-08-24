@@ -5,7 +5,7 @@ export default function Sidebar({ isMenuOpen, setIsMenuOpen }) {
 
   return (
     <div
-      className={`fixed inset-0 z-40 bg-gradient-to-t from-cielo-claro to-atardecer transform transition-transform duration-300 ease-in-out ${
+      className={`fixed inset-0 z-40 bg-slate-200 bg-opacity-20 backdrop-blur-md transition-transform duration-300 ease-in-out ${
         isMenuOpen ? "translate-y-0 z-20" : "-translate-y-full"
       }`}
     >
