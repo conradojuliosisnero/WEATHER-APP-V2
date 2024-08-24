@@ -1,0 +1,57 @@
+:root {
+  --clouds-position: -80px; /* Variable para ajustar la posición vertical de las nubes */
+  --clouds-animation-duration: 60s; /* Duración de la animación */
+}
+
+.cloud {
+  width: 600px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: -100px;
+}
+
+#cloud-base {
+  top: var(--clouds-position);
+  height: 100px;
+  filter: url(#filter-base);
+  box-shadow: 200px 170px 19px 40px rgba(255, 255, 255, 0.9);
+  animation: moveClouds var(--clouds-animation-duration) linear infinite;
+}
+
+#cloud-back {
+  top: var(--clouds-position);
+  height: 30px;
+  width: 500px;
+  filter: url(#filter-back);
+  box-shadow: 200px 200px 10px 40px rgba(215, 215, 215, 0.3);
+  animation: moveClouds var(--clouds-animation-duration) linear infinite;
+}
+
+#cloud-mid {
+  top: calc(var(--clouds-position) - 10px); /* Ajusta la posición en relación con la variable */
+  width: 580px;
+  height: 35px;
+  filter: url(#filter-mid);
+  box-shadow: 210px 250px 28px 30px rgba(66, 105, 146, 0.2);
+  animation: moveClouds var(--clouds-animation-duration) linear infinite;
+}
+
+#cloud-front {
+  top: calc(var(--clouds-position) - 20px); /* Ajusta la posición en relación con la variable */
+  width: 450px;
+  height: 40px;
+  left: -20px;
+  filter: url(#filter-front);
+  box-shadow: 210px 272px 30px 0px rgba(0, 0, 0, 0.4);
+  animation: moveClouds var(--clouds-animation-duration) linear infinite;
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(100vw); /* Empieza fuera del viewport a la derecha */
+  }
+  100% {
+    transform: translateX(-100%); /* Termina fuera del viewport a la izquierda */
+  }
+}

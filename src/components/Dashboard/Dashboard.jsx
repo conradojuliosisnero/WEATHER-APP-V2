@@ -10,6 +10,7 @@ import Footer from "./Footer/Foooter";
 import { getHour } from "@/lib/utils";
 import { gradients } from "@/data/data";
 import Flash from "../Flash/Flash";
+import Clouds from "./Clouds/Clouds";
 
 export default function WeatherDashboard() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,6 +59,7 @@ export default function WeatherDashboard() {
       <Sidebar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <main className="p-4 space-y-6">
         <Flash />
+          {/* <Clouds /> */}
         <SearchSection />
         {/* <div className="w-full bg-white bg-opacity-10 backdrop-blur h-[300px] rounded-redondeado-grande overflow-hidden ">
           nubes en caso de averlas
