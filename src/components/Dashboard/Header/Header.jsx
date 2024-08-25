@@ -11,7 +11,7 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="p-4 flex justify-between items-center relative text-white">
+    <header className="p-4 flex bg-transparent justify-between items-center relative text-white">
       <h1 className="text-2xl font-bold" onClick={() => router.push("/home")}>
         Clim
       </h1>
