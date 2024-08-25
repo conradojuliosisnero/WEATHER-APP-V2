@@ -2,18 +2,22 @@
 
 export const NAVDATA = [
   {
+    id: 1,
     name: "Home",
     path: "/home",
   },
   {
+    id: 2,
     name: "About",
     path: "/about",
   },
   {
+    id: 3,
     name: "Contact",
     path: "/contact",
   },
   {
+    id: 4,
     name: "Config",
     path: "/config",
   },
@@ -228,4 +232,21 @@ export const rainOptions = {
   detectRetina: true,
 };
 
-export default rainOptions;
+const weatherGradients = {
+  sunny: "bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500",
+  cloudy: "bg-gradient-to-r from-gray-300 via-gray-400 to-gray-500",
+  rainy: "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700",
+  stormy: "bg-gradient-to-r from-gray-700 via-gray-800 to-black",
+  snowy: "bg-gradient-to-r from-blue-100 via-blue-200 to-white",
+  misty: "bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400",
+  foggy: "bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600",
+  windy: "bg-gradient-to-r from-green-300 via-blue-300 to-blue-500",
+  clearNight: "bg-gradient-to-r from-indigo-900 via-purple-900 to-black",
+  sunset: "bg-gradient-to-r from-pink-500 via-red-500 to-orange-500",
+  dawn: "bg-gradient-to-r from-purple-400 via-pink-400 to-orange-300",
+  drizzly: "bg-gradient-to-r from-blue-400 via-blue-500 to-gray-500",
+};
+
+export default weatherGradients;
+
+

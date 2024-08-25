@@ -26,7 +26,7 @@ export default function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-cielo-claro to-atardecer p-4">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-sky-400  p-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-8">
         <h2 className="text-titulo font-bold text-center text-tormenta-fuerte mb-8">
           {isLogin ? "Iniciar Sesión" : "Registrarse"}
@@ -99,7 +99,7 @@ export default function Login() {
           <div>
             <button
               type="submit"
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-lluvia-intensa hover:bg-tormenta-fuerte focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lluvia-intensa"
+              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-cielo-despejado hover:bg-cielo-claro focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lluvia-intensa"
             >
               {isLogin ? "Iniciar Sesión" : "Registrarse"}
             </button>

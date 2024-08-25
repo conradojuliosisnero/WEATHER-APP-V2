@@ -35,15 +35,14 @@ export default function WeatherDashboard() {
 
   return (
     <div className={`min-h-screen text-white relative overflow-x-hidden`}>
-      <main className="p-4 space-y-6">
+      <main className="p-4 space-y-6 border-b-1 mx-3">
         <SearchSection />
         <Climate />
-        {/* <div className="w-full bg-white bg-opacity-10 backdrop-blur h-[300px] rounded-redondeado-grande overflow-hidden ">
-          nubes en caso de averlas
-        </div> */}
-        <CurrentCity />
-        <WeeklyForecast />
-        <FavoriteCities />
+        <div className="sm:grid sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-3">
+          <CurrentCity />
+          <WeeklyForecast />
+          <FavoriteCities />
+        </div>
       </main>
     </div>
   );

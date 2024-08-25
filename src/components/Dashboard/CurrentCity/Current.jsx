@@ -16,7 +16,7 @@ export default function CurrentCity() {
       </h2>
       <div className="flex items-center justify-between">
         <div>
-          <p className="text-8xl font-bold">22°</p>
+          <p className="text-8xl font-bold lg:text-[10rem]">22°</p>
           <p className="text-md font-bold">Despejado</p>
         </div>
         {/* <Cloud className="h-16 w-16" /> */}
