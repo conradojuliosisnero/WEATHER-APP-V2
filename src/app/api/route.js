@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import getCurrentTime from "../services/currrentTime";
+import getCurrentTime from "@/services/currrentTime";
 
 export async function GET(request) {
   const url = new URL(request.url);
