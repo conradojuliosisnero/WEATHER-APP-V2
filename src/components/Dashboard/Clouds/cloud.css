@@ -1,7 +1,8 @@
-:root {
-  --clouds-position: -80px; /* Variable para ajustar la posición vertical de las nubes */
-  --clouds-animation-duration: 60s; /* Duración de la animación */
-}
+/* Asegúrate de descomentar estas variables si las necesitas */
+/* :root {
+  --clouds-position: -80px; 
+  --clouds-animation-duration: 60s; 
+} */
 
 .cloud {
   width: 600px;
@@ -9,6 +10,10 @@
   border-radius: 50%;
   position: absolute;
   left: -100px;
+  animation: 
+    moveCloud var(--clouds-animation-duration) linear infinite,
+    fadeCloud var(--clouds-animation-duration) ease-in-out infinite;
+  /* Nota: Hemos quitado blurCloud para evitar problemas de rendimiento */
 }
 
 #cloud-base {
@@ -16,7 +21,6 @@
   height: 100px;
   filter: url(#filter-base);
   box-shadow: 200px 170px 19px 40px rgba(255, 255, 255, 0.9);
-  animation: moveClouds var(--clouds-animation-duration) linear infinite;
 }
 
 #cloud-back {
@@ -25,39 +29,65 @@
   width: 500px;
   filter: url(#filter-back);
   box-shadow: 200px 200px 10px 40px rgba(215, 215, 215, 0.3);
-  animation: moveClouds var(--clouds-animation-duration) linear infinite;
 }
 
 #cloud-mid {
-  top: calc(
-    var(--clouds-position) - 10px
-  ); /* Ajusta la posición en relación con la variable */
+  top: calc(var(--clouds-position) - 10px);
   width: 580px;
   height: 35px;
   filter: url(#filter-mid);
   box-shadow: 210px 250px 28px 30px rgba(66, 105, 146, 0.2);
-  animation: moveClouds var(--clouds-animation-duration) linear infinite;
 }
 
 #cloud-front {
-  top: calc(
-    var(--clouds-position) - 20px
-  ); /* Ajusta la posición en relación con la variable */
+  top: calc(var(--clouds-position) - 20px);
   width: 450px;
   height: 40px;
   left: -20px;
   filter: url(#filter-front);
-  box-shadow: 210px 272px 30px 0px rgba(0, 0, 0, 0.4);
-  animation: moveClouds var(--clouds-animation-duration) linear infinite;
+  box-shadow: 210px 272px 30px 0px rgba(157, 157, 157, 0.4);
 }
 
-@keyframes moveClouds {
+@keyframes moveCloud {
   0% {
-    transform: translateX(100vw); /* Empieza fuera del viewport a la derecha */
+    transform: translateX(100vw) translateY(0) scale(1);
+  }
+  25% {
+    transform: translateX(50vw) translateY(-10px) scale(1.1);
+  }
+  50% {
+    transform: translateX(25vw) translateY(0) scale(1);
+  }
+  75% {
+    transform: translateX(0) translateY(5px) scale(1.05);
   }
   100% {
-    transform: translateX(
-      -100%
-    ); /* Termina fuera del viewport a la izquierda */
+    transform: translateX(-100%) translateY(-5px) scale(0.9);
   }
 }
+
+@keyframes fadeCloud {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+/* Mantenemos blurCloud por si decides usarlo en el futuro */
+@keyframes blurCloud {
+  0%, 100% {
+    filter: blur(1px);
+  }
+  25%, 75% {
+    filter: blur(0);
+  }
+  50% {
+    filter: blur(0.5px);
+  }
+}
+
