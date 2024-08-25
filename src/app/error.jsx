@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button/Button";
 
 export default function Error() {
   return (
-    <div className="flex min-h-[100dvh] flex-col items-center justify-center bg-gradient-to-br from-cielo-claro to-atardecer px-4 py-12 sm:px-6 lg:px-8 text-white">
+    <div className="flex min-h-[100dvh] flex-col items-center justify-center bg-gradient-to-br from-cielo-claro to-lluvia-ligera px-4 py-12 sm:px-6 lg:px-8 text-white">
       <div className="mx-auto max-w-md text-center">
         <TriangleAlertIcon className="mx-auto h-12 w-12 text-primary" />
         <h1 className="mt-4 text-3xl font-bold tracking-tightsm:text-4xl">

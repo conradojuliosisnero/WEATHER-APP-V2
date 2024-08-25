@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-500 to-indigo-900 text-white flex flex-col items-center px-4 py-8">
+    <div className="min-h-screen text-white flex flex-col items-center px-4 py-8">
       {/* Header */}
       <header className="text-center mb-6">
         <h1 className="text-4xl font-bold">Sobre Nuestra App del Clima</h1>
@@ -41,14 +41,6 @@ export default function About() {
           </p>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="mt-12 text-center">
-        <p className="text-sm">
-          © {new Date().getFullYear()} Nuestra App del Clima. Todos los derechos
-          reservados.
-        </p>
-      </footer>
     </div>
   );
 }

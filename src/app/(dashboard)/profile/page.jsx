@@ -1,6 +1,7 @@
+import UserProfile from "@/components/UserProfile/UserProfile"
 
 export default function page() {
   return (
-    <div>profile</div>
+    <UserProfile/>
   )
 }
