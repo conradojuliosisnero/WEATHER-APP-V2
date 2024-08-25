@@ -34,12 +34,10 @@ export default function WeatherDashboard() {
   }, [currentHour]);
 
   return (
-    <div className={`min-h-screen text-white relative`}>
+    <div className={`min-h-screen text-white relative overflow-x-hidden`}>
       <main className="p-4 space-y-6">
         <SearchSection />
-        <div className="w-full bg-white bg-opacity-10 backdrop-blur flex">
         <Climate />
-        </div>
         {/* <div className="w-full bg-white bg-opacity-10 backdrop-blur h-[300px] rounded-redondeado-grande overflow-hidden ">
           nubes en caso de averlas
         </div> */}
