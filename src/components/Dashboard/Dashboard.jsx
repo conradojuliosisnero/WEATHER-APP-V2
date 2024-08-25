@@ -6,8 +6,6 @@ import WeeklyForecast from "./WeeklyForecast/WeeklyForecast";
 import FavoriteCities from "./FavoriteCities/FavoriteCities";
 import { getHour } from "@/lib/utils";
 import { gradients } from "@/data/data";
-import Sun from "../Sun/Sun";
-import Clouds from "./Clouds/Clouds";
 import Climate from "../Climate/Climate";
 
 export default function WeatherDashboard() {

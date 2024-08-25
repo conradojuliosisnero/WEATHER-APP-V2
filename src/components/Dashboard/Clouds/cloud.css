@@ -1,9 +1,3 @@
-/* Asegúrate de descomentar estas variables si las necesitas */
-/* :root {
-  --clouds-position: -80px; 
-  --clouds-animation-duration: 60s; 
-} */
-
 .cloud {
   width: 600px;
   height: 100px;
