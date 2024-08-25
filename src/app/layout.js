@@ -1,11 +1,11 @@
-import { Nunito_Sans } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "@/styles/globals.css";
 import { Providers } from "@/providers/Providers";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { DESCRIPTION } from "@/data/data";
 
-const inter = Nunito_Sans({
+const inter = Nunito({
   subsets: ["latin"],
   style: ["normal", "italic"],
   weight: ["400", "500", "600", "700"],
