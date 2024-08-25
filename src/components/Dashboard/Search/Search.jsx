@@ -1,16 +1,39 @@
 import { Search } from "lucide-react";
 import { useSubmint } from "@/hooks/useSubmint";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { toast } from "react-toastify";
 
 export default function SearchSection() {
   const [city, setCity] = useState("");
+  const [location, setLocation] = useState(null);
+
+  useEffect(() => {
+    // Verifica si el navegador soporta la geolocalización
+    if (navigator.geolocation) {
+      // Obtiene la ubicación del usuario
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          console.log(position);
+          const { latitude, longitude } = position.coords;
+          setLocation({ latitude, longitude });
+          toast.success("Ubicación encontrada");
+        },
+        (error) => {
+          console.log(error.message);
+          toast.error("No se pudo encontrar la ubicación");
+        }
+      );
+    } else {
+      setError("La geolocalización no es soportada por este navegador.");
+    }
+  }, []);
+
 
   const { data, error, loading, submintData } = useSubmint();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Buscando...");
     await submintData(`${process.env.WEATHER_URL}`, {
       city,
     });

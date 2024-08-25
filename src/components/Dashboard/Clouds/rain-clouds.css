@@ -1,0 +1,48 @@
+.rain-cloud {
+  position: absolute;
+  border-radius: 50%;
+  animation: moveCloud var(--clouds-animation-duration) linear infinite;
+  /* Alternar animaciones para mejorar la apariencia visual */
+}
+
+.rain-cloud-base {
+  position: absolute;
+  filter: url(#filter-base);
+  /* Ajusta las sombras si es necesario para cada capa */
+}
+
+.rain-cloud-back {
+  position: absolute;
+  filter: url(#filter-back);
+  /* Ajusta las sombras si es necesario para cada capa */
+}
+
+.rain-cloud-mid {
+  position: absolute;
+  filter: url(#filter-mid);
+  /* Ajusta las sombras si es necesario para cada capa */
+}
+
+.rain-cloud-front {
+  position: absolute;
+  filter: url(#filter-front);
+  /* Ajusta las sombras si es necesario para cada capa */
+}
+
+@keyframes moveCloud {
+  0% {
+    transform: translateX(100vw) translateY(0) scale(1);
+  }
+  25% {
+    transform: translateX(50vw) translateY(-10px) scale(1.1);
+  }
+  50% {
+    transform: translateX(25vw) translateY(0) scale(1);
+  }
+  75% {
+    transform: translateX(0) translateY(5px) scale(1.05);
+  }
+  100% {
+    transform: translateX(-100%) translateY(-5px) scale(0.9);
+  }
+}
