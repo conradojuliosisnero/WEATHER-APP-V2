@@ -4,10 +4,9 @@
   border-radius: 50%;
   position: absolute;
   left: -100px;
-  animation: 
-    moveCloud var(--clouds-animation-duration) linear infinite,
-    fadeCloud var(--clouds-animation-duration) ease-in-out infinite;
-  /* Nota: Hemos quitado blurCloud para evitar problemas de rendimiento */
+  transition: opacity 0.5s ease-in-out;
+  animation: moveCloud var(--clouds-animation-duration) linear infinite,
+    hideCloud 1s linear infinite;
 }
 
 #cloud-base {
@@ -60,28 +59,11 @@
   }
 }
 
-@keyframes fadeCloud {
-  0%, 100% {
-    opacity: 0.7;
-  }
-  25%, 75% {
+@keyframes hiddenCloud {
+  0% {
     opacity: 1;
   }
-  50% {
-    opacity: 0.9;
+  100% {
+    opacity: 0;
   }
 }
-
-/* Mantenemos blurCloud por si decides usarlo en el futuro */
-@keyframes blurCloud {
-  0%, 100% {
-    filter: blur(1px);
-  }
-  25%, 75% {
-    filter: blur(0);
-  }
-  50% {
-    filter: blur(0.5px);
-  }
-}
-

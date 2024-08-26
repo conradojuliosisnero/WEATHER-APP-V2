@@ -11,15 +11,15 @@ module.exports = {
     extend: {
       colors: {
         "cielo-claro": "#87CEEB",
-        "cielo-despejado": "#38BDF8",
+        "cielo-despejado": "#2F88E0",
         "nubes-grises": "#A0A4A8",
         "lluvia-ligera": "#6E7F80",
         "sol-brillante": "#FFD700",
         "tormenta-fuerte": "#4F4F4F",
         "lluvia-intensa": "#1F3A93",
-        "nieve": "#FFFFFF",
-        "atardecer": "#FF6347",
-        "niebla": "#B0C4DE",
+        nieve: "#FFFFFF",
+        atardecer: "#FF6347",
+        niebla: "#B0C4DE",
       },
       fontSize: {
         titulo: "2.25rem", // 36px
@@ -60,7 +60,12 @@ module.exports = {
   purge: {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
     options: {
-      safelist: ["bg-gradient-to-r", "from-blue-500","via-green-500","to-green-500"], 
+      safelist: [
+        "bg-gradient-to-r",
+        "from-blue-500",
+        "via-green-500",
+        "to-green-500",
+      ],
     },
   },
   darkMode: "class",
