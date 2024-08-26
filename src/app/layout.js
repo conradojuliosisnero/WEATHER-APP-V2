@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
           rtl={false}
           pauseOnFocusLoss
           draggable
+          stacked
           pauseOnHover
           theme="light"
         />

@@ -1,42 +1,25 @@
+"use client";
 import { Search } from "lucide-react";
-import { useSubmint } from "@/hooks/useSubmint";
-import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { toast } from "react-toastify";
+import { useEffect, useState } from "react";
+import { useFetch } from "@/hooks/useFetch";
+import useUserStore from "@/store/store";
 
 export default function SearchSection() {
   const [city, setCity] = useState("");
-  const [location, setLocation] = useState(null);
+  
+  const { data, error, loading, getData } = useFetch();
+  const { setCurrentTimeSearch } = useUserStore();
 
   useEffect(() => {
-    // Verifica si el navegador soporta la geolocalización
-    if (navigator.geolocation) {
-      // Obtiene la ubicación del usuario
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          console.log(position);
-          const { latitude, longitude } = position.coords;
-          setLocation({ latitude, longitude });
-          toast.success("Ubicación encontrada");
-        },
-        (error) => {
-          console.log(error.message);
-          toast.error("No se pudo encontrar la ubicación");
-        }
-      );
-    } else {
-      setError("La geolocalización no es soportada por este navegador.");
+    if (data) {
+      setCurrentTimeSearch(data);
     }
-  }, []);
+  }, [data, setCurrentTimeSearch]);
 
-
-  const { data, error, loading, submintData } = useSubmint();
-
-  const handleSubmit = async (e) => {
+  const handleSearch = async (e) => {
     e.preventDefault();
-    await submintData(`${process.env.WEATHER_URL}`, {
-      city,
-    });
+    await getData(`${process.env.NEXT_PUBLIC_WEATHER_SEARCH_URL}?q=${city}`);
   };
 
   const animateButtonOptions = {
@@ -100,7 +83,7 @@ export default function SearchSection() {
               exit="exit"
               className="ml-3"
             >
-              <button type="submit" onClick={handleSubmit} className="btn-uno">
+              <button type="submit" onClick={handleSearch} className="btn-uno">
                 Buscar
               </button>
             </motion.div>

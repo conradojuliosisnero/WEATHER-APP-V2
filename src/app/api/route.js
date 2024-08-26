@@ -6,15 +6,10 @@ export async function GET(request) {
   const lat = url.searchParams.get("lat");
   const lon = url.searchParams.get("lon");
   const part = url.searchParams.get("part");
-
   try {
     const response = await getCurrentTime(lat, lon, part);
-    if (!response.ok) {
-      throw new Error(response.statusText);
-    } else {
-      return NextResponse.json(response);
-    }
+    return NextResponse.json(response);
   } catch (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return NextResponse.json({ error: error }, { status: 500 });
   }
 }

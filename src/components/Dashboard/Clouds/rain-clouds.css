@@ -2,7 +2,6 @@
   position: absolute;
   border-radius: 50%;
   animation: moveCloud var(--clouds-animation-duration) linear infinite;
-  /* Alternar animaciones para mejorar la apariencia visual */
 }
 
 .rain-cloud-base {

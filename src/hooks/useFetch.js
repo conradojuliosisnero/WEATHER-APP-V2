@@ -9,17 +9,16 @@
 
 import { useState } from "react";
 
-export const useFeetch = () => {
+export const useFetch = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const OPTIONS = {
-    method: "GET",
-    cache: "no-store",
-  };
-
-  const fetchData = async (url) => {
+    const OPTIONS = {
+      method: "GET",
+      cache: "no-store",
+    };
+  const getData = async (url) => {
     setLoading(true);
     try {
       const response = await fetch(url, OPTIONS);
@@ -31,5 +30,5 @@ export const useFeetch = () => {
       setLoading(false);
     }
   };
-  return { data, error, loading, fetchData };
+  return { data, error, loading, getData };
 };

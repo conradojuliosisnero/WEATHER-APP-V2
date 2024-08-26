@@ -18,7 +18,8 @@
     "react-dom": "^18",
     "react-toastify": "^10.0.5",
     "react-tsparticles": "^2.12.2",
-    "tsparticles": "^3.5.0"
+    "tsparticles": "^3.5.0",
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
     "eslint": "^8",
