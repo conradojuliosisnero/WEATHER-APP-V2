@@ -23,12 +23,6 @@ export default function Nav() {
   const menuItems = [
     { id: "home", icon: Home, label: "Inicio", path: "/home" },
     { id: "profile", icon: User, label: "Perfil", path: "/profile" },
-    {
-      id: "settings",
-      icon: Settings,
-      label: "Configuración",
-      path: "/settings",
-    },
     { id: "help", icon: HelpCircle, label: "Ayuda", path: "/about" },
   ];
 

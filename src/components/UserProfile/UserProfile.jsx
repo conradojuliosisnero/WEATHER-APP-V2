@@ -37,9 +37,10 @@ export default function UserProfile() {
 
   return (
     <div className="min-h-screen p-4 md:p-8">
-      <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
+      <div className="max-w-2xl mx-auto text-white bg-white bg-opacity-20 backdrop-blur-lg rounded-lg shadow-xl overflow-hidden">
         <div className="md:flex">
-          <div className="md:flex-shrink-0">
+          <div className="md:flex-shrink-0 ">
+            {/* IMAGEN  */}
             <div className="h-48 w-full md:w-48 relative">
               <Image
                 className="h-full w-full object-cover md:h-full md:w-48"
@@ -64,9 +65,9 @@ export default function UserProfile() {
               )}
             </div>
           </div>
-          <div className="p-8 w-full">
+          <div className="p-8 w-full ">
             <div className="flex justify-between items-center mb-6">
-              <h1 className="text-2xl font-bold text-gray-900">
+              <h1 className="text-2xl font-bold text-white">
                 Perfil de Usuario
               </h1>
               {!isEditing ? (

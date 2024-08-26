@@ -1,50 +1,25 @@
-import "./cloud.css";
+import Cloud from "./Cloud";
+import { useState, useEffect } from "react";
 
 export default function Clouds() {
+  const [ramdonScales, setRamdonScales] = useState(0.011);
+  console.log(ramdonScales);
+
+  useEffect(() => {
+    const generateRamdonScales = () => {
+      // genera valores entre 0.011 y 0.021
+      const newRamdonScales = Math.random() * (0.021 - 0.011) + 0.011;
+      // toma los 4 primeros decimales
+      newRamdonScales.toFixed(4);
+      setRamdonScales(newRamdonScales);
+    };
+
+    setInterval(generateRamdonScales, 2000);
+  }, []);
+
   return (
     <>
-      <div class="cloud" id="cloud-base"></div>
-      <div class="cloud" id="cloud-back"></div>
-      <div class="cloud" id="cloud-mid"></div>
-      <div class="cloud" id="cloud-front"></div>
-      <svg width="0" height="0">
-        <filter id="filter-base">
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency="0.011"
-            numOctaves="5"
-            seed="8517"
-          />
-          <feDisplacementMap in="SourceGraphic" scale="120" />
-        </filter>
-        <filter id="filter-back">
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency="0.011"
-            numOctaves="3"
-            seed="8517"
-          />
-          <feDisplacementMap in="SourceGraphic" scale="120" />
-        </filter>
-        <filter id="filter-mid">
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency="0.011"
-            numOctaves="3"
-            seed="8517"
-          />
-          <feDisplacementMap in="SourceGraphic" scale="120" />
-        </filter>
-        <filter id="filter-front">
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency="0.009"
-            numOctaves="4"
-            seed="8517"
-          />
-          <feDisplacementMap in="SourceGraphic" scale="50" />
-        </filter>
-      </svg>
+      <Cloud scales={ramdonScales}/>
     </>
   );
 }

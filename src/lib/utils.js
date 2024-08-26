@@ -24,3 +24,25 @@ export const getHour = () => {
   const hours = now.getHours(); // Hora en formato 24 horas (0-23)
   return hours
 };
+
+// funcion para obtener la ubicacion
+export const getUserLocation = () => {
+  return new Promise((resolve, reject) => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          resolve({
+            lat: position.coords.latitude,
+            long: position.coords.longitude,
+          });
+        },
+        (error) => {
+          reject(error.message);
+        }
+      );
+    } else {
+      reject("Geolocation is not supported by this browser.");
+    }
+  });
+};
+

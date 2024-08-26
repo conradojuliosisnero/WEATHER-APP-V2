@@ -28,12 +28,6 @@ export default function Sidebar({ isMenuOpen, setIsMenuOpen }) {
           <User className="mr-2 h-6 w-6" /> Perfil
         </Link>
         <Link
-          href="/settings"
-          className="hover:text-blue-300 transition-colors duration-200 flex items-center"
-        >
-          <Settings className="mr-2 h-6 w-6" /> Configuración
-        </Link>
-        <Link
           href="/about"
           className="hover:text-blue-300 transition-colors duration-200 flex items-center"
         >

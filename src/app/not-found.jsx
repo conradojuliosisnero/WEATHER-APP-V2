@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function NotFound() {
   const router = useRouter();
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cielo-claro to-atardecer flex flex-col items-center justify-center text-white p-4">
+    <div className="min-h-screen bg-gradient-to-br from-cielo-despejado to-cielo-claro flex flex-col items-center justify-center text-white p-4">
       <CloudLightning className="w-24 h-24 mb-8 animate-pulse" />
       <h1 className="text-4xl font-bold mb-2 text-center">404</h1>
       <h2 className="text-2xl font-semibold mb-4 text-center">

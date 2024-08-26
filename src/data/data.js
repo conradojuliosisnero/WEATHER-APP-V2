@@ -74,33 +74,33 @@ export const DESCRIPTION = {
 };
 
 export const gradients = {
-  0: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-niebla",
-  1: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-niebla",
-  2: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-niebla",
-  3: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-niebla",
-  4: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-niebla",
-  5: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-niebla",
+  0: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
+  1: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
+  2: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
+  3: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
+  4: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
+  5: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
 
-  6: "bg-gradient-to-b from-sky-400 via-cielo-medio to-niebla",
-  7: "bg-gradient-to-b from-sky-400 via-cielo-medio to-niebla",
-  8: "bg-gradient-to-b from-sky-400 via-cielo-medio to-niebla",
-  9: "bg-gradient-to-b from-sky-400 via-cielo-medio to-niebla",
-  10: "bg-gradient-to-b from-sky-400 via-cielo-medio to-niebla",
-  11: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-niebla",
+  6: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
+  7: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
+  8: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
+  9: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
+  10: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
+  11: "bg-gradient-to-b from-cielo-despejado via-cielo-medio to-niebla",
 
-  12: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-claro",
-  13: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-despejado",
-  14: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-claro",
-  15: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-claro",
-  16: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-claro",
-  17: "bg-gradient-to-b from-cielo-claro via-cielo-medio to-cielo-claro",
-  
-  18: "bg-gradient-to-b from-cielo-claro via-atardecer-suave to-atardecer",
-  19: "bg-gradient-to-b from-cielo-claro via-atardecer-suave to-atardecer",
-  20: "bg-gradient-to-b from-cielo-claro via-atardecer-suave to-atardecer",
-  21: "bg-gradient-to-b from-cielo-claro via-atardecer-suave to-atardecer",
-  22: "bg-gradient-to-b from-cielo-claro via-nubes-claras to-niebla",
-  23: "bg-gradient-to-b from-cielo-claro via-nubes-claras to-niebla",
+  12: "bg-gradient-to-b from-cielo-despejado to-cielo-claro",
+  13: "bg-gradient-to-b from-cielo-despejado to-cielo-claro",
+  14: "bg-gradient-to-b from-cielo-despejado to-cielo-claro",
+  15: "bg-gradient-to-b from-cielo-despejado to-cielo-claro",
+  16: "bg-gradient-to-b from-cielo-despejado to-cielo-claro",
+  17: "bg-gradient-to-b from-cielo-despejado to-cielo-claro",
+
+  18: "bg-gradient-to-b from-cielo-despejado via-atardecer-suave to-atardecer",
+  19: "bg-gradient-to-b from-cielo-despejado via-atardecer-suave to-atardecer",
+  20: "bg-gradient-to-b from-cielo-despejado via-atardecer-suave to-atardecer",
+  21: "bg-gradient-to-b from-cielo-despejado via-atardecer-suave to-atardecer",
+  22: "bg-gradient-to-b from-cielo-despejado via-nubes-claras to-niebla",
+  23: "bg-gradient-to-b from-cielo-despejado via-nubes-claras to-niebla",
 };
 
 export const options = {
@@ -232,7 +232,7 @@ export const rainOptions = {
   detectRetina: true,
 };
 
-const weatherGradients = {
+export const weatherGradients = {
   sunny: "bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500",
   cloudy: "bg-gradient-to-r from-gray-300 via-gray-400 to-gray-500",
   rainy: "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700",
@@ -247,6 +247,5 @@ const weatherGradients = {
   drizzly: "bg-gradient-to-r from-blue-400 via-blue-500 to-gray-500",
 };
 
-export default weatherGradients;
 
 
